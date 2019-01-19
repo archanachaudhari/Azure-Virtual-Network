@@ -1,0 +1,317 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworks_VNet1_name": {
+            "defaultValue": "VNet1",
+            "type": "String"
+        },
+        "virtualNetworks_VNet2_name": {
+            "defaultValue": "VNet2",
+            "type": "String"
+        },
+        "subnets_Subnet1_name": {
+            "defaultValue": "Subnet1",
+            "type": "String"
+        },
+        "subnets_Subnet2_name": {
+            "defaultValue": "Subnet2",
+            "type": "String"
+        },
+        "subnets_Subnet3_name": {
+            "defaultValue": "Subnet3",
+            "type": "String"
+        },
+        "subnets_Subnet4_name": {
+            "defaultValue": "Subnet4",
+            "type": "String"
+        },
+        "subnets_subnet5_name": {
+            "defaultValue": "subnet5",
+            "type": "String"
+        },
+        "subnets_Subnet1_name_1": {
+            "defaultValue": "Subnet1",
+            "type": "String"
+        },
+        "subnets_Subnet2_name_1": {
+            "defaultValue": "Subnet2",
+            "type": "String"
+        },
+        "subnets_Subnet3_name_1": {
+            "defaultValue": "Subnet3",
+            "type": "String"
+        },
+        "subnets_Subnet4_name_1": {
+            "defaultValue": "Subnet4",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet1'.",
+            "type": "Microsoft.Network/virtualNetworks",
+            "name": "[parameters('virtualNetworks_VNet1_name')]",
+            "apiVersion": "2018-10-01",
+            "location": "centralindia",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "resourceGuid": "d063a5db-4e8c-4dd6-8c51-8b72d7f0e1db",
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "10.0.0.0/16"
+                    ]
+                },
+                "subnets": [
+                    {
+                        "name": "Subnet1",
+                        "etag": "W/\"d5d656b3-cc33-4c43-a5fa-82be92386500\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "10.0.0.0/24",
+                            "delegations": []
+                        }
+                    },
+                    {
+                        "name": "Subnet2",
+                        "etag": "W/\"d5d656b3-cc33-4c43-a5fa-82be92386500\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "10.0.1.0/24",
+                            "delegations": []
+                        }
+                    },
+                    {
+                        "name": "Subnet3",
+                        "etag": "W/\"d5d656b3-cc33-4c43-a5fa-82be92386500\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "10.0.2.0/24",
+                            "delegations": []
+                        }
+                    },
+                    {
+                        "name": "Subnet4",
+                        "etag": "W/\"d5d656b3-cc33-4c43-a5fa-82be92386500\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "10.0.3.0/24",
+                            "delegations": []
+                        }
+                    },
+                    {
+                        "name": "subnet5",
+                        "etag": "W/\"d5d656b3-cc33-4c43-a5fa-82be92386500\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "10.0.4.0/24",
+                            "serviceEndpoints": [],
+                            "delegations": []
+                        }
+                    }
+                ],
+                "virtualNetworkPeerings": [],
+                "enableDdosProtection": false,
+                "enableVmProtection": false
+            },
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet2'.",
+            "type": "Microsoft.Network/virtualNetworks",
+            "name": "[parameters('virtualNetworks_VNet2_name')]",
+            "apiVersion": "2018-10-01",
+            "location": "southindia",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "resourceGuid": "600a311f-9fd5-4e8d-a65b-7a281cf157a7",
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "192.168.0.0/22"
+                    ]
+                },
+                "subnets": [
+                    {
+                        "name": "Subnet1",
+                        "etag": "W/\"f4ed2106-5ccc-45a9-9d9f-cbcf7753c3d8\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "192.168.0.0/24",
+                            "delegations": []
+                        }
+                    },
+                    {
+                        "name": "Subnet2",
+                        "etag": "W/\"f4ed2106-5ccc-45a9-9d9f-cbcf7753c3d8\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "192.168.1.0/24",
+                            "delegations": []
+                        }
+                    },
+                    {
+                        "name": "Subnet3",
+                        "etag": "W/\"f4ed2106-5ccc-45a9-9d9f-cbcf7753c3d8\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "192.168.2.0/24",
+                            "delegations": []
+                        }
+                    },
+                    {
+                        "name": "Subnet4",
+                        "etag": "W/\"f4ed2106-5ccc-45a9-9d9f-cbcf7753c3d8\"",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "addressPrefix": "192.168.3.0/24",
+                            "delegations": []
+                        }
+                    }
+                ],
+                "virtualNetworkPeerings": [],
+                "enableDdosProtection": false,
+                "enableVmProtection": false
+            },
+            "dependsOn": []
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet1/subnets/Subnet1'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet1_name'), '/', parameters('subnets_Subnet1_name'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.0.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet1_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet1/subnets/Subnet2'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet1_name'), '/', parameters('subnets_Subnet2_name'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.1.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet1_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet1/subnets/Subnet3'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet1_name'), '/', parameters('subnets_Subnet3_name'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.2.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet1_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet1/subnets/Subnet4'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet1_name'), '/', parameters('subnets_Subnet4_name'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.3.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet1_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet1/subnets/subnet5'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet1_name'), '/', parameters('subnets_subnet5_name'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.4.0/24",
+                "serviceEndpoints": [],
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet1_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet2/subnets/Subnet1'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet2_name'), '/', parameters('subnets_Subnet1_name_1'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "192.168.0.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet2_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet2/subnets/Subnet2'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet2_name'), '/', parameters('subnets_Subnet2_name_1'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "192.168.1.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet2_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet2/subnets/Subnet3'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet2_name'), '/', parameters('subnets_Subnet3_name_1'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "192.168.2.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet2_name'))]"
+            ]
+        },
+        {
+            "comments": "Generalized from resource: '/subscriptions/4266dd08-59a2-478c-805e-6b8814de8a86/resourceGroups/rgvnet/providers/Microsoft.Network/virtualNetworks/VNet2/subnets/Subnet4'.",
+            "type": "Microsoft.Network/virtualNetworks/subnets",
+            "name": "[concat(parameters('virtualNetworks_VNet2_name'), '/', parameters('subnets_Subnet4_name_1'))]",
+            "apiVersion": "2018-10-01",
+            "scale": null,
+            "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "192.168.3.0/24",
+                "delegations": []
+            },
+            "dependsOn": [
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_VNet2_name'))]"
+            ]
+        }
+    ]
+}
